@@ -38,6 +38,22 @@ System.out.prinln("Number: " +win);
 
 for(int i = 0; i < bets.size(); i++){
 
+boolean isNum = isNumeric(bets.get(i));
+
+if(isNum){
+
+if(win > 0 && win == Integer.parseInt(bets.get(i))){
+System.out.println(players.get(i) + " " + bets.get(i) + " WIN " + amounts.get(i ) * 36);
+}
+else{
+
+System.out.prinln(players.get(i) + " "+ bets.get(i) + " Lose " 0.0);
+}
+}
+else{
+
+}
+
 }
 
 }
