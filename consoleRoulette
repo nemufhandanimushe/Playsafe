@@ -2,7 +2,10 @@
 
 public class consoleRoulette{
 
+public static void main(String [] args){
+
 Scanner sc = new Scanner(System.in);
+
 File file = new File("");
 List<String> bets = new ArrayList();
 List<Palyers> players = new ArrayList();
@@ -34,6 +37,8 @@ Thread.sleep(30000);
 int win = (int)(Math.random() * range) + min;
 System.out.prinln();
 System.out.prinln("Number: " +win);
+System.out.println("Player \t Bet \t Outcome \t Winnings");
+System.out.println(---);
 
 
 for(int i = 0; i < bets.size(); i++){
@@ -59,6 +64,18 @@ System.out.println(players.get(i) + " " + bets.get(i) + " WIN " + amounts.get(i 
 else{
 System.out.prinln(players.get(i) + " "+ bets.get(i) + " Lose " 0.0);
 }
+
+}
+
+else{
+
+if(bets.get(i).toLowerCase().equsls("Odd")){
+System.out.println(players.get(i) + " " + bets.get(i) + " WIN " + amounts.get(i ) * 2);
+}
+
+}else{
+System.out.prinln(players.get(i) + " "+ bets.get(i) + " Lose " 0.0);
+}
 }
 }
 
@@ -81,6 +98,8 @@ int i = Integer.parseInt(strNum);
 return false;
 }
 return true;
+}
+
 }
 
 }
