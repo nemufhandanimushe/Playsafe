@@ -52,6 +52,14 @@ System.out.prinln(players.get(i) + " "+ bets.get(i) + " Lose " 0.0);
 }
 else{
 
+if(win % 2 == 0){
+if(bets.get(i).toLowerCase().equals("Even")){
+System.out.println(players.get(i) + " " + bets.get(i) + " WIN " + amounts.get(i ) * 2);
+}
+else{
+System.out.prinln(players.get(i) + " "+ bets.get(i) + " Lose " 0.0);
+}
+}
 }
 
 }
