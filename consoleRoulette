@@ -8,6 +8,10 @@ List<String> bets = new ArrayList();
 List<Palyers> players = new ArrayList();
 List<Double> amounts = new ArrayList();
 
+int min = 0;
+int max = 30;
+int range = max - min +1;
+
 try{
 BufferedReader br = new BufferedReader(new FileReader(file));
 String st;
@@ -22,6 +26,37 @@ System.out.println();
 
 }
 
+try{
 
+while(true){
+
+Thread.sleep(30000);
+int win = (int)(Math.random() * range) + min;
+System.out.prinln();
+System.out.prinln("Number: " +win);
+
+
+for(int i = 0; i < bets.size(); i++){
+
+}
+
+}
+}catch(InterruptedException e){
+
+}
+
+public static boolean isNumeric(String strNum){
+if(strNum == null){
+return false;
+}
+try{
+
+int i = Integer.parseInt(strNum);
+}catch(NumberFormatException nfe){
+
+return false;
+}
+return true;
+}
 
 }
